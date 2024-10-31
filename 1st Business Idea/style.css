@@ -1,0 +1,196 @@
+/* General styling */
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(230, 229, 209);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling for h1 with an exciting font */
+h1 {
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Styling for h2 without border */
+h2 {
+    padding: 5px;
+    margin: 15px 0;
+}
+
+/* Dropdown menu styling with no background color */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.menu-button {
+    background-color: teal; /* Matches the page background */
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Table styling for contact_us.html with 3px black border */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+td {
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Bottom images styling for individual pages */
+.bottom-left, .bottom-center, .bottom-right, .bottom-family, .bottom-image {
+    height: 200px;
+    width: auto;
+    border-radius: 5px; /* Rounded edges for all images */
+}
+
+/* Positioning for specific images in index.html */
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Grouped styling for flex layout of bottom images in your_story.html and how_we_fix_it.html */
+.bottom-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.bottom-images .bottom-image {
+    height: 200px;
+    width: auto;
+}
+
+/* Animation for h1 and h2 in index.html */
+.animated-h1 {
+    animation: dropDown 1s ease forwards;
+}
+
+.animated-h2 {
+    animation: explode 2s ease forwards;
+    animation-delay: 1s; /* Starts after h1 completes */
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+/* Responsive styling for tablet and mobile */
+@media (max-width: 768px) {
+    .menu {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .bottom-left, .bottom-center, .bottom-right, .bottom-family, .bottom-image {
+        height: 150px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 14px;
+    }
+
+    .bottom-left, .bottom-center, .bottom-right, .bottom-family, .bottom-image {
+        height: 100px;
+        width: auto;
+    }
+}
