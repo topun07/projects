@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Basic Body Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
     text-align: center;
 }
@@ -21,7 +23,6 @@ header h1 {
     align-items: center;
     margin: 0 auto;
 }
-
 
 header h2 {
     margin-top: 10px;
@@ -48,4 +49,42 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffa500;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Set specific width for Product Title column */
+#inventoryTable th:nth-child(1),
+#inventoryTable td:nth-child(1) {
+    width: 30px;
+}
+
+/* Alternating row colors for readability */
+#inventoryTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+#inventoryTable tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Image Size */
+#inventoryTable img {
+    width: 40px;
+    height: 40px;
 }

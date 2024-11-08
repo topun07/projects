@@ -1,0 +1,5 @@
+URL CSV
+https://www.dropbox.com/s/hze2tgiip57qvch/Inventory.csv?dl=0
+
+URL TXT
+https://www.dropbox.com/s/yicp09q852g21vj/Inventory.txt?dl=0
