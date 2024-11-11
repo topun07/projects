@@ -18,6 +18,12 @@ body {
     padding: 20px;
 }
 
+/* Typography styling */
+h1, h2, p, li {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
 /* Header styling */
 header {
     text-align: center;
@@ -26,13 +32,14 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #d14e88; /* Vibrant pink for a playful vibe */
+    color: #d14e88;
 }
 
 header h2 {
     font-size: 1.2rem;
     color: #555;
     margin-top: 10px;
+    border: black 2px solid;
 }
 
 /* Navigation styling */
@@ -56,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6f9c; /* Lighten on hover */
+    color: #ff6f9c;
 }
 
 /* Main content styling */
@@ -71,4 +78,30 @@ main {
 main p {
     margin-top: 20px;
     color: #444;
+}
+
+/* Product image styling */
+.product-images img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Sticky Add to Cart button styling */
+button#add-to-cart {
+    position: sticky;
+    bottom: 20px;  /* Button sticks 20px from the bottom of the viewport */
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #d14e88;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button#add-to-cart:hover {
+    background-color: #ff6f9c;
 }
