@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wet Platinum Luxury Silicone Based Lubricant 8oz</title>
+    <link rel="stylesheet" href="../lubricant.css">
+    <script src="../lubricant.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lubricant_page1.html">Lubricant Page 1</a></li>
+            <li><a href="lubricant_page2.html">Lubricant Page 2</a></li>
+            <li><a href="lubricant_page3.html">Lubricant Page 3</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Wet Platinum Luxury Silicone Based Lubricant 8oz</h1>
+    </header>
+
+    <main>
+        <!-- Product Images Section -->
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WT27006.jpg?v=1723891744" alt="Wet Platinum Lubricant 8oz">
+            <img src="https://image.cdn2.seaart.ai/2023-10-12/19670578351856645/b7e583bda9a902ddeec87a2667754006ac9d00b9_high.webp" alt="Wet Platinum Luxury">
+        </div>
+
+        <p><strong>MSRP:</strong> $<span id="wet_platinum" class="price"></span></p>
+
+        <p><strong>Brand:</strong> WET</p>
+
+        <p>Immerse yourself in a world of pure, uninhibited pleasure with Wet Platinum Luxury Silicone Based Lubricant. Each drop of this luxurious lubricant is designed to enhance every sensation, from the smooth, seamless insertion that builds anticipation to the exhilarating glide against your most sensitive areas. Feel the product working its magic as it coats every intimate inch, delivering comfort and pleasure in ways you've never experienced before. It’s all about heightened sensations, uncontrollable moans, and body-shaking orgasms, leaving you in a state of pure relaxation and satisfaction.</p>
+
+        <p>Crafted with a high-grade silicone blend, Wet Platinum is hypoallergenic, pH-neutral, and long-lasting, making it perfect for all kinds of intimate activities. Doctor-recommended and waterproof, this lubricant performs under any condition, even underwater, to ensure uninterrupted pleasure. Its compatibility with condoms adds peace of mind, allowing you to focus solely on the sensations it brings. Don't miss out on experiencing the premium choice for pleasure—Wet Platinum is here to take you to new heights. Add it to your collection today and let the journey to satisfaction begin!</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Silicone-based for long-lasting pleasure</li>
+            <li>Hypoallergenic and pH-neutral</li>
+            <li>Condom compatible</li>
+            <li>Made in the USA</li>
+        </ul>
+
+        <p><strong>Package Weight:</strong> 8.90 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 2.00W by 7.50H by 2.00L inches</p>
+
+        <!-- Sticky Add to Cart Button -->
+        <button id="add-to-cart" onclick="location.href='cart.html'">Add to Cart</button>
+
+        <!-- Linking JavaScript for Cart functionality -->
+        <script src="cart.js"></script>
+
+        <script>
+            // Set MSRP prices dynamically from lubricant.js
+            document.getElementById("wet_platinum-price").textContent = getLubricantPrice("wet_platinum").toFixed(2);
+        </script>
+
+    </main>
+</body>
+</html>
