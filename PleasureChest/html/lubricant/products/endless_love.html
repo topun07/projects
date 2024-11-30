@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endless Love Anal Relaxing Silicone Lube 1.7oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,45 +20,61 @@
         </ul>
     </nav>
 
-    <h1>Endless Love Anal Relaxing Silicone Lube 1.7oz</h1>
+    <header>
+        <h1>Endless Love Anal Relaxing Silicone Lube 1.7oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BA3000-03.jpg?v=1723860249" alt="Endless Love Anal Relaxing Silicone Lube - Image 1">
-        <img src="https://i.pinimg.com/736x/d9/be/aa/d9beaa4f369a3733988cc6e339b4baeb.jpg" alt="Endless Love Anal Relaxing Silicone Lube - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BA3000-03.jpg?v=1723860249" alt="Endless Love Anal Relaxing Silicone Lube - Image 1">
+            <img src="https://i.pinimg.com/736x/d9/be/aa/d9beaa4f369a3733988cc6e339b4baeb.jpg" alt="Endless Love Anal Relaxing Silicone Lube - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="endless_love-price" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="endless_love"></span></p>
+        <p><strong>Brand:</strong> BODY ACTION</p>
 
-    <p><strong>Brand:</strong> BODY ACTION</p>
+        <p>Indulge in heightened pleasure with Endless Love Anal Relaxing Silicone Lube. This premium formula allows for smooth insertion, providing an intense experience of pleasure with every glide. The sensation of the lubricant against sensitive areas brings forth uncontrollable quivering and leaves you feeling completely satisfied and relaxed.</p>
 
-    <p>Indulge in heightened pleasure with Endless Love Anal Relaxing Silicone Lube. This premium formula allows for smooth insertion, providing an intense experience of pleasure with every glide. The sensation of the lubricant against sensitive areas brings forth uncontrollable quivering and leaves you feeling completely satisfied and relaxed.</p>
+        <p>Perfect for those seeking comfort during anal play, Endless Love's unique formula relaxes muscles without harsh desensitizing agents. Its natural oils enhance relaxation while preserving sensitivity, making each moment more pleasurable. Add Endless Love to your collection and experience the difference. Purchase yours today!</p>
 
-    <p>Perfect for those seeking comfort during anal play, Endless Love's unique formula relaxes muscles without harsh desensitizing agents. Its natural oils enhance relaxation while preserving sensitivity, making each moment more pleasurable. Add Endless Love to your collection and experience the difference. Purchase yours today!</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Silicone Based</li>
+            <li>Natural Oils for Relaxation</li>
+            <li>Non-Desensitizing</li>
+            <li>Safe for Sensitive Skin</li>
+        </ul>
 
-    <h2>Product Description</h2>
-    <p>Endless Love is everything you need for comfortable, satisfying anal play. It puts your body at ease with a potent set of natural ingredients, releasing muscle tension without the harsh desensitizing substances. Natural oils provide the relaxing effect without limiting nerve activity—there's no lidocaine, benzocaine, or anything else that could numb your body, and the oils are carefully balanced to prevent irritation or redness. The formula is safe for sensitive skin, and because it's silicone-based, it provides a lasting slickness that never seems to change in texture. A liberal application of this lube allows for hours of action.</p>
+        <p><strong>Package Weight:</strong> 4.00 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 1.50W by 6.00H by 1.50L inches</p>
 
-    <p><strong>Features</strong></p>
-    <ul>
-        <li>Silicone Based</li>
-        <li>Natural Oils for Relaxation</li>
-        <li>Non-Desensitizing</li>
-        <li>Safe for Sensitive Skin</li>
-    </ul>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Endless Love Anal Relaxing Silicone Lube" data-product-name="endless_love">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <p><strong>Package Weight:</strong> 4.00 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 1.50W by 6.00H by 1.50L inches</p>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
-
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("endless_love-price").textContent = getLubricantPrice("endless_love").toFixed(2);
-        // Repeat for each product in the grid
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='endless_love']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("endless_love").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
     </script>
 
 </body>

@@ -3,52 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avant D3 - Summer Fling</title>
+    <title>Avant D3 Summer Fling</title>
     <link rel="stylesheet" href="../dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../../lubricant/lubricant.js" defer></script>
+    <script src="../dildo.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation Columns -->
-    <nav>
+        <!-- Navigation Columns -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../dildo/dildo.html">Dildo</a></li>
+                <li><a href="../../vibrator/vibrator.html">Vibrator</a></li>
+                <li><a href="../../lubricant/lubricant.html">Lubricant</a></li>
+                <li><a href="../../strap/strap.html">Straps</a></li>
+                <li><a href="../../cart/cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+    <header>
+        <h1>Avant D3 - Summer Fling</h1>
+    </header>
+    
+    <main>
+        
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN88263.jpg?v=1723864202" alt="Avant D3 - Summer Fling - Image 1">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN88263-01.jpg?v=1723864202" alt="Avant D3 - Summer Fling - Image 2">
+        </div>
+
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="summer"></span></p>
+        <p><strong>Brand:</strong> BLUSH</p>
+
+        <p>Modern, stylish, and stunningly beautiful—meet Avant, a collection that elevates pleasure to an art form. Crafted with care and designed with your deepest desires in mind, each Avant piece is a unique, hand-sculpted masterpiece that blends natural forms with indulgent textures. The Avant D3 is perfect for those who crave a bit more, offering extra girth and strategically placed curves and ridges for enhanced stimulation. This design isn’t just visually captivating; it’s crafted to heighten every sensation, with each curve and ridge delivering a new layer of pleasure that invites you to fully explore and savor every moment. Avant D3’s luxurious, artisanal touch makes it an unforgettable addition to any collection.</p>
+
+        <p>Are you ready to experience Avant D3 for yourself? This beautifully crafted toy offers the fullness and textured delight you’ve been searching for, all in a modern, artisanal design that’s as stunning as it is satisfying. Treat yourself to the heightened sensory experience you deserve—add Avant D3 to your collection today and enjoy a journey of pleasure that’s as unique as you are.</p>
+
+    <section>
+        <h2>Features</h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/html/dildo/blush.html">Blush</a></li>
-            <li><a href="/html/dildo/lovely_planet.html">Lovely Planet</a></li>
-            <li><a href="/html/dildo/xrbrand.html">XR Brand</a></li>
+            <li>Made of body-safe platinum cured silicone</li>
+            <li>Phthalate and paraffin-free</li>
+            <li>Artisanal, hand-sculpted design</li>
+            <li>Sleek and modern aesthetic</li>
+            <li>Dimensions: 8" Length (7" Insertable) x 1.75" Width</li>
         </ul>
-    </nav>
+    </section>
 
-    <h1>Avant D3 - Summer Fling</h1>
-
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN88263.jpg?v=1723864202" alt="Avant D3 - Summer Fling - Image 1">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN88263-01.jpg?v=1723864202" alt="Avant D3 - Summer Fling - Image 2">
+    <div class="cart-bubble" id="cart-bubble">
+        <span class="cart-icon">&#128722;</span>
+        <span class="cart-count" id="cart-count">0</span>
     </div>
 
-    <p><strong>MSRP:</strong> $107.48</p>
-    <p><strong>Brand:</strong> BLUSH</p>
-
-    <p>Modern, stylish, and stunningly beautiful—meet Avant, a collection that elevates pleasure to an art form. Crafted with care and designed with your deepest desires in mind, each Avant piece is a unique, hand-sculpted masterpiece that blends natural forms with indulgent textures. The Avant D3 is perfect for those who crave a bit more, offering extra girth and strategically placed curves and ridges for enhanced stimulation. This design isn’t just visually captivating; it’s crafted to heighten every sensation, with each curve and ridge delivering a new layer of pleasure that invites you to fully explore and savor every moment. Avant D3’s luxurious, artisanal touch makes it an unforgettable addition to any collection.</p>
-
-    <p>Are you ready to experience Avant D3 for yourself? This beautifully crafted toy offers the fullness and textured delight you’ve been searching for, all in a modern, artisanal design that’s as stunning as it is satisfying. Treat yourself to the heightened sensory experience you deserve—add Avant D3 to your collection today and enjoy a journey of pleasure that’s as unique as you are.</p>
-
-    <h2>Features</h2>
-    <ul>
-        <li>Made of body-safe platinum cured silicone</li>
-        <li>Phthalate and paraffin-free</li>
-        <li>Artisanal, hand-sculpted design</li>
-        <li>Sleek and modern aesthetic</li>
-        <li>Dimensions: 8" Length (7" Insertable) x 1.75" Width</li>
-    </ul>
-
+    <!-- Back Button -->
+    <div id="back-button" class="back-button">
+        <button class="back-icon">&#8592; Back</button>
+    </div>
+    
     <p><strong>Package Weight:</strong> 17.80 Ounces</p>
     <p><strong>Package Dimensions:</strong> 3.30W by 11.00H by 4.30L inches</p>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
+    <section class="goes-great-with">
+        <h2>Best Paired With</h2>
+        <div class="product-recommendation">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WL1801-08.jpg?v=1723886754" alt="Sex Grease - Image 1" class="recommendation-image">
+            <p>
+                <a href="/html/lubricant/products/sex_grease.html"><strong>Sex Grease</strong></a>
+            </p>
+            <p>Premium Silicone Lubricant</p>
+            <p>Price: $<span class="product-price" data-product-name="sex_grease"></span></p>
+            <button class="add-to-cart" data-name="Sex Grease" data-product-name="sex_grease">
+                Add to Cart
+            </button>
+        </div>
+    </section>
 
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+    <!-- Sticky Add to Cart Button -->
+    <button class="add-to-cart sticky-add-to-cart" data-name="Avant D3 - Summer Fling" data-product-name="summer">
+        <span class="cart-icon">&#128722;</span> Add to Cart
+    </button>
 
+    </main>
 </body>
 </html>

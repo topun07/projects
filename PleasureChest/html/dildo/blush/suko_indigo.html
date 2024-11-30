@@ -3,56 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suko Indigo - Avant by Blush</title>
+    <title>Avant D12 Suko-Indigo</title>
     <link rel="stylesheet" href="../dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../../lubricant/lubricant.js" defer></script>
+    <script src="../dildo.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation Columns -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/html/dildo/blush.html">Blush</a></li>
-            <li><a href="/html/dildo/lovely_planet.html">Lovely Planet</a></li>
-            <li><a href="/html/dildo/xrbrand.html">XR Brand</a></li>
-        </ul>
-    </nav>
+        <!-- Navigation Columns -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../dildo/dildo.html">Dildo</a></li>
+                <li><a href="../../vibrator/vibrator.html">Vibrator</a></li>
+                <li><a href="../../lubricant/lubricant.html">Lubricant</a></li>
+                <li><a href="../../strap/strap.html">Straps</a></li>
+                <li><a href="../../cart/cart.html">Cart</a></li>
+            </ul>
+        </nav>
 
+    <header>
+        <h1>Suko Indigo - Avant by Blush</h1>
+    </header>
+    
     <main>
-        <header>
-            <h1>Suko Indigo - Avant</h1>
-        </header>
-
-        <!-- Product Images -->
+        
         <div class="product-images">
-            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN86752.jpg?v=1723867813" alt="Suko Indigo Front">
-            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN86752-01.jpg?v=1723867813" alt="Suko Indigo Side">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN86752.jpg?v=1723867813" alt="Suko Indigo - Image 1">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BN86752-01.jpg?v=1723867813" alt="Suko Indigo - Image 2">
         </div>
 
-        <p><strong>MSRP:</strong> <span class="price">$69.42</span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="suko_indigo"></span></p>
         <p><strong>Brand:</strong> BLUSH</p>
 
-        <!-- Product Description -->
         <p>Modern, stylish, and irresistibly beautiful—meet Avant, a collection where artistry and pleasure unite. Each Avant toy is a unique masterpiece, crafted with a dedication to your desires and meticulously hand-sculpted to create a natural, inviting form that excites the senses. The Avant Suko brings this artistry to life with its dual-density design, firm on the inside yet deliciously soft on the outside, for an exquisite, realistic feel that enhances every touch. With extra pleasure curves thoughtfully incorporated into its sleek design, the Avant Suko invites you to explore new sensations with each curve, creating an experience that is as visually captivating as it is thrilling to the touch.</p>
 
         <p>Ready to elevate your pleasure with Avant? The Avant Suko is designed to bring a new level of realism and excitement to your intimate moments, blending elegance with function in a way that feels both luxurious and satisfying. Let each carefully sculpted curve lead you on a journey of exploration—add Avant Suko to your collection today and discover the art of pleasure redefined.</p>
 
-        
-        <h3>Features</h3>
+    <section>
+        <h2>Features</h2>
         <ul>
             <li>Made of Platinum Cured Silicone</li>
             <li>Suction Cup Base</li>
             <li>Harness Compatible</li>
             <li>Individually Handcrafted</li>
+            <li>Dimensions: 7" Insertable Length x 1.75" Width</li>
         </ul>
+    </section>
 
-        <p><strong>Package Weight:</strong> 17.50 Ounces</p>
-        <p><strong>Package Dimensions:</strong> 3.50W x 11.00H x 4.30L inches</p>
+    <div class="cart-bubble" id="cart-bubble">
+        <span class="cart-icon">&#128722;</span>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
 
-        <!-- Add to Cart Button -->
-        <button id="add-to-cart">Add to Cart</button>
+    <!-- Back Button -->
+    <div id="back-button" class="back-button">
+        <button class="back-icon">&#8592; Back</button>
+    </div>
+    
+    <p><strong>Package Weight:</strong> 17.50 Ounces</p>
+    <p><strong>Package Dimensions:</strong> 3.50W x 11.00H x 4.30L inches</p>
+
+    <section class="goes-great-with">
+        <h2>Best Paired With</h2>
+        <div class="product-recommendation">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PP054-8.jpg?v=1723879683" alt="Pussy Willow - Image 1" class="recommendation-image">
+            <p>
+                <a href="/html/lubricant/products/pussy_willow.html"><strong>Pussy Willow</strong></a>
+            </p>
+            <p>Premium Silicone Lubricant</p>
+            <p>Price: $<span class="product-price" data-product-name="pussy_willow"></span></p>
+            <button class="add-to-cart" data-name="Pussy Willow" data-product-name="pussy_willow">
+                Add to Cart
+            </button>
+        </div>
+    </section>
+
+    <!-- Sticky Add to Cart Button -->
+    <button class="add-to-cart sticky-add-to-cart" data-name="Suko Indigo" data-product-name="suko_indigo">
+        <span class="cart-icon">&#128722;</span> Add to Cart
+    </button>
+
     </main>
-
-    <script src="cart.js"></script>
 </body>
 </html>

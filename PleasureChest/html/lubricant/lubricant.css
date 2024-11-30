@@ -9,6 +9,21 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    padding-bottom: 120px; /* Space for the sticky button */
+}
+
+/* Page Layout */
+.page-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Expand to take up remaining space */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for main content */
 }
 
 h1, h2, p, ul {
@@ -41,7 +56,20 @@ h2 {
 
 .price:hover {
     color: #ffe135; /* Lighter shade on hover */
-    transform: scale(1.1); /* Enlarge on hover */
+    transform: scale(1.4); /* Enlarge on hover */
+}
+
+/* Style for the MSRP price */
+.product-price {
+    font-size: 1.4em;
+    color: #ffd700; /* Gold color for price */
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.product-price:hover {
+    color: #ffe135; /* Lighter shade on hover */
+    transform: scale(1.4); /* Enlarge on hover */
 }
 
 /* Navigation Style */
@@ -88,7 +116,7 @@ nav ul li a:hover {
 }
 
 .product-images img:hover {
-    transform: scale(1.0125); /* Enlarge by 1.25% on hover */
+    transform: scale(1.75); /* Enlarge by 1.75% on hover */
 }
 
 /* Text Content Styling */
@@ -132,11 +160,118 @@ p, li {
     transition: color 0.3s ease;
 }
 
+.features-cart-container {
+    display: flex;
+    gap: 20px; /* Space between features and "Goes Great With" sections */
+    align-items: flex-start;
+}
+
+.features-section {
+    flex: 2; /* Features section takes more space */
+}
+
+.goes-great-with {
+    
+    flex: 1; /* "Goes Great With" section takes less space */
+    padding: 15px;
+    text-align: center;
+}
+
+.goes-great-with h2 {
+    font-size: 3em;
+    color: #dfc1ff;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-left: -5px;
+}
+
+.product-recommendation {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Reccomendation Image - Responsive Flex Display */
+.recommendation-image {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.recommendation-image {
+    flex: 1 1 200px; /* Responsive size with minimum width */
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.recommendation-image img:hover {
+    transform: scale(1.0125); /* Enlarge by 1.25% on hover */
+}
+
+.recommendation {
+    margin-bottom: 150px; /* Space between recommended product and sticky button */
+}
+
+/* Style for the 'Recommendation Title' */
+.product-recommendation a {
+    font-size: 2em;
+    color: #dfc1ff;
+    text-decoration: none; /* Removes default underline */
+    line-height: 2.5rem; /* Sets the height */
+    display: inline-block; /* Ensures the border is applied properly */
+    text-align: center; /* Ensure centered alignment */
+    word-wrap: break-word; /* Allow breaking long words */
+    margin: 0 auto; /* Center the title */
+    padding: 10px; /* Add some spacing around */
+}
+
+.product-recommendation a:hover {
+    color: #b89bcf; /* Optional: change color on hover for better interactivity */
+    border-bottom: 1px solid #b89bcf; /* Optional: change underline color on hover */
+}
+
+.add-to-cart {
+    font-family: 'Playfair Display', serif;
+    background-color: #ff007a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #ff66b2;
+    transform: scale(1.1); /* Enlarge button on hover */
+}
+
+.add-to-cart .cart-icon {
+    font-size: 1.2rem;
+    color: white;
+}
+
 /* Optional Hover Effect */
 .product-item p:hover {
     color: #ff66b2; /* Lighter or contrasting color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: translateY(-2px);
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -151,33 +286,14 @@ p, li {
     }
 }
 
-
-/* Sticky "Add to Cart" Button */
-#add-to-cart {
-    font-family: 'Playfair Display', serif;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 15px;
-    background-color: #ff007a;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    margin: 20px auto;
-    display: block;
-    width: 90%;
-    max-width: 300px;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#add-to-cart:hover {
-    background-color: #ff33a1;
-    transform: translateY(-2px);
+/* Keyframes for pulsating effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 /* Responsive Design */
@@ -202,6 +318,164 @@ p, li {
     }
 }
 
+/* Add to Cart Button with Pulsating Effect */
+.sticky-add-to-cart {
+    position: fixed; /* Fix to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the button */
+    background-color: #ff007a; /* Button color */
+    color: #fff; /* Text color */
+    font-size: 1.2em; /* Text size */
+    font-weight: bold; /* Bold text */
+    padding: 15px 30px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    cursor: pointer; /* Pointer on hover */
+    animation: pulse 1.5s infinite; /* Pulsing animation */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000; /* Keep above other content */
+    margin: 0;
+}
+
+.sticky-add-to-cart:hover {
+    background-color: #ff33a1; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.sticky-add-to-cart {
+    border: 2px solid red; /* Debug border */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translateX(-50%) scale(1); /* Combine scale with the existing translateX */
+    }
+    50% {
+        transform: translateX(-50%) scale(1.05); /* Maintain centering while scaling */
+    }
+}
+
+
+#add-to-cart {
+    font-family: 'Playfair Display', serif;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 1em;
+    background-color: #ff007a;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: pulse 1.5s infinite; /* Apply pulsing animation */
+}
+
+#add-to-cart:hover {
+    background-color: #ff33a1;
+    transform: translateY(-2px);
+}
+
+.features-cart-container {
+    display: flex;
+    gap: 20px; /* Space between features and cart */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.features-section h2,
+.cart-sidebar h2 {
+    font-size: 1.8em; /* Consistent font size */
+    color: #e5c4ff; /* Matching text color */
+    margin-top: 0;
+}
+
+.features-cart-container section {
+    flex: 1; /* Allows the features section to expand */
+}
+
+/* Floating Cart Bubble */
+.cart-bubble {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px; /* Distance from the right of the screen */
+    width: 60px;
+    height: 60px;
+    background-color: #ff007a; /* Blue background */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.cart-bubble:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: #ff66b2;
+}
+
+.cart-bubble .cart-icon {
+    color: white;
+    font-size: 24px;
+}
+
+.cart-bubble .cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff0000; /* Red for the badge */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*.clear cart bubble*/
+.clear-cart-bubble {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    width: 60px;
+    height: 60px;
+    background-color: #ff007a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.clear-cart-bubble:hover {
+    transform: scale(1.1);
+    background-color: #ff33a1;
+}
+
+.clear-cart-icon {
+    font-size: 24px;
+    color: white;
+}
+
 /* Product Grid Layout - 4 Columns */
 .product-grid {
     display: grid;
@@ -217,6 +491,7 @@ p, li {
 }
 
 .product-item img {
+    
     width: 100%;
     height: auto;
     border-radius: 8px;

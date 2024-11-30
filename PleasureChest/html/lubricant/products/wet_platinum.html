@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wet Platinum Luxury Silicone Based Lubricant 8oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -30,7 +31,7 @@
             <img src="https://image.cdn2.seaart.ai/2023-10-12/19670578351856645/b7e583bda9a902ddeec87a2667754006ac9d00b9_high.webp" alt="Wet Platinum Luxury">
         </div>
 
-        <p><strong>MSRP:</strong> $<span id="wet_platinum" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="wet_platinum"></span></p>
 
         <p><strong>Brand:</strong> WET</p>
 
@@ -50,16 +51,33 @@
         <p><strong>Package Dimensions:</strong> 2.00W by 7.50H by 2.00L inches</p>
 
         <!-- Sticky Add to Cart Button -->
-        <button id="add-to-cart" onclick="location.href='cart.html'">Add to Cart</button>
+        <button class="add-to-cart sticky-add-to-cart" data-name="Wet Platinum Luxury Silicone Based Lubricant" data-product-name="wet_platinum">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-        <!-- Linking JavaScript for Cart functionality -->
-        <script src="cart.js"></script>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-        <script>
-            // Set MSRP prices dynamically from lubricant.js
-            document.getElementById("wet_platinum-price").textContent = getLubricantPrice("wet_platinum").toFixed(2);
-        </script>
-
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
     </main>
+
+    <script>
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='wet_platinum']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("wet_platinum").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
+    </script>
+
 </body>
 </html>

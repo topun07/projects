@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intimate Earth Pussy Willow Silk Hybrid Glide 8oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,44 +20,61 @@
         </ul>
     </nav>
 
-    <h1>Intimate Earth Pussy Willow Silk Hybrid Glide 8oz</h1>
+    <header>
+        <h1>Intimate Earth Pussy Willow Silk Hybrid Glide 8oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PP054-8.jpg?v=1723879683" alt="Intimate Earth Pussy Willow Silk Hybrid Glide - Image 1">
-        <img src="https://i.pinimg.com/originals/0d/f9/4b/0df94bd39d23a7bf92e49d0507ed11f6.jpg" alt="Intimate Earth Pussy Willow Silk Hybrid Glide - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PP054-8.jpg?v=1723879683" alt="Intimate Earth Pussy Willow Silk Hybrid Glide - Image 1">
+            <img src="https://i.pinimg.com/originals/0d/f9/4b/0df94bd39d23a7bf92e49d0507ed11f6.jpg" alt="Intimate Earth Pussy Willow Silk Hybrid Glide - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="pussy_willow" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="pussy_willow"></span></p>
+        <p><strong>Brand:</strong> Intimate Earth</p>
 
-    <p><strong>Brand:</strong> Intimate Earth</p>
+        <p>Discover the ultimate pleasure with Intimate Earth Pussy Willow Silk Hybrid Glide. This silky hybrid formula enhances every intimate touch, delivering a smooth glide that allows for easy, pleasurable insertion. Feel the lubricant as it moves seamlessly, providing an intense, soothing sensation that leads to uncontrollable moans and a deep sense of relaxation and comfort.</p>
 
-    <p>Discover the ultimate pleasure with Intimate Earth Pussy Willow Silk Hybrid Glide. This silky hybrid formula enhances every intimate touch, delivering a smooth glide that allows for easy, pleasurable insertion. Feel the lubricant as it moves seamlessly, providing an intense, soothing sensation that leads to uncontrollable moans and a deep sense of relaxation and comfort.</p>
+        <p>Crafted with a blend of plant cellulose and premium silicone, Pussy Willow is designed for those who value quality and comfort in their intimate moments. With added licorice root and shiitake extracts, it’s both soothing and satisfying. Don’t wait to experience the pleasure this lubricant offers. Add it to your collection today!</p>
 
-    <p>Crafted with a blend of plant cellulose and premium silicone, Pussy Willow is designed for those who value quality and comfort in their intimate moments. With added licorice root and shiitake extracts, it’s both soothing and satisfying. Don’t wait to experience the pleasure this lubricant offers. Add it to your collection today!</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Hybrid Glide</li>
+            <li>Latex Friendly</li>
+            <li>Made in USA</li>
+            <li>Vegan</li>
+        </ul>
 
-    <h2>Product Description</h2>
-    <p>Pussy Willow is a perfect blend of plant cellulose and the highest grade silicone. Infused with soothing licorice root and super-soft shiitake extracts. Apply to desired area. Latex condom friendly.</p>
+        <p><strong>Package Weight:</strong> 9.60 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 2.00W by 7.30H by 2.00L inches</p>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Hybrid Glide</li>
-        <li>Latex Friendly</li>
-        <li>Made in USA</li>
-        <li>Vegan</li>
-    </ul>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Intimate Earth Pussy Willow Silk Hybrid Glide" data-product-name="pussy_willow">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <p><strong>Package Weight:</strong> 9.60 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 2.00W by 7.30H by 2.00L inches</p>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
-
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("pussy_willow-price").textContent = getLubricantPrice("pussy_willow").toFixed(2);
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='pussy_willow']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("pussy_willow").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
     </script>
 
 </body>

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pjur BACKDOOR Anal Silicone Personal Lubricant 8.5oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,43 +20,61 @@
         </ul>
     </nav>
 
-    <h1>BACKDOOR Anal Silicone Personal Lubricant 8.5oz</h1>
+    <header>
+        <h1>BACKDOOR Anal Silicone Personal Lubricant 8.5oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PG1700-08.jpg?v=1723865145" alt="pjur BACKDOOR Anal Silicone Personal Lubricant - Image 1">
-        <img src="https://wallpapers.com/images/hd/muscle-man-pictures-kmlzqwjk9utql34t.jpg" alt="pjur BACKDOOR Anal Silicone Personal Lubricant - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PG1700-08.jpg?v=1723865145" alt="pjur BACKDOOR Anal Silicone Personal Lubricant - Image 1">
+            <img src="https://wallpapers.com/images/hd/muscle-man-pictures-kmlzqwjk9utql34t.jpg" alt="pjur BACKDOOR Anal Silicone Personal Lubricant - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="backdoor-price" class="price"></span></p>
-    <p><strong>Brand:</strong> PJUR</p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="backdoor"></span></p>
+        <p><strong>Brand:</strong> PJUR</p>
 
-    <p>Experience heightened pleasure with pjur BACKDOOR Anal Silicone Personal Lubricant. Its ultra-smooth formula provides effortless insertion, amplifying each sensation for intense orgasms and deep satisfaction. Feel the soothing glide as it enhances every touch, bringing forth uncontrollable moans and a profound feeling of comfort and relaxation.</p>
+        <p>Experience heightened pleasure with BACKDOOR Anal Silicone Personal Lubricant. Its ultra-smooth formula provides effortless insertion, amplifying each sensation for intense orgasms and deep satisfaction. Feel the soothing glide as it enhances every touch, bringing forth uncontrollable moans and a profound feeling of comfort and relaxation.</p>
 
-    <p>Specially formulated with jojoba to nourish and moisturize, pjur BACKDOOR is ideal for extended play. It offers long-lasting lubrication and a skin-softening effect, allowing you to fully enjoy intimate moments. Add this premium product to your collection for a luxurious experience. Purchase pjur BACKDOOR Anal Silicone Personal Lubricant today!</p>
+        <p>Specially formulated with jojoba to nourish and moisturize, BACKDOOR is ideal for extended play. It offers long-lasting lubrication and a skin-softening effect, allowing you to fully enjoy intimate moments. Add this premium product to your collection for a luxurious experience. Purchase BACKDOOR Anal Silicone Personal Lubricant today!</p>
 
-    <h2>Product Description</h2>
-    <p>Pjur BACK DOOR Silicone-based lubricant is specially formulated for anal sex. The natural jojoba in this product nourishes and moisturizes the skin, promoting skin's elasticity. The skin becomes soft and smooth, allowing you to relax. The silicone provides particularly long-lasting lubrication and is made without preservatives. pjur formulas are dermatologically tested.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Silicone Based</li>
+            <li>Contains Jojoba</li>
+            <li>Moisturizing</li>
+            <li>Long Lasting</li>
+        </ul>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Silicone Based</li>
-        <li>Contains Jojoba</li>
-        <li>Moisturizing</li>
-        <li>Long Lasting</li>
-    </ul>
+        <p><strong>Package Weight:</strong> 10.20 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 2.00W by 7.50H by 2.00L inches</p>
 
-    <p><strong>Package Weight:</strong> 10.20 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 2.00W by 7.50H by 2.00L inches</p>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="BACKDOOR Anal Silicone Personal Lubricant" data-product-name="backdoor">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("backdoor-price").textContent = getLubricantPrice("backdoor").toFixed(2);
+        // Initialize MSRP prices dynamically
+        const backdoorPrice = document.querySelector(".product-price[data-product-name='backdoor']");
+        if (backdoorPrice) {
+            backdoorPrice.textContent = getLubricantPrice("backdoor").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
     </script>
 
 </body>

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PJUR</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <title>pjur med PREMIUM Glide Silicone Intimate Personal Lubricant 3.4oz</title>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,45 +20,62 @@
         </ul>
     </nav>
 
-    <h1>Silken Elixir for Delicate Skin</h1>
+    <header>
+        <h1>Silken Elixir for Delicate Skin</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PG2510-00.jpg?v=1723870784" alt="PJUR med PREMIUM glide - Image 1">
-        <img src="https://i.pinimg.com/736x/1d/d1/3d/1dd13d8d70681241297b1188c86f8736.jpg" alt="PJUR med PREMIUM glide - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PG2510-00.jpg?v=1723870784" alt="PJUR med PREMIUM glide - Image 1">
+            <img src="https://i.pinimg.com/736x/1d/d1/3d/1dd13d8d70681241297b1188c86f8736.jpg" alt="PJUR med PREMIUM glide - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="med_premium_glide-price" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="med_premium_glide"></span></p>
+        <p><strong>Brand:</strong> PJUR</p>
 
-    <p><strong>Brand:</strong> PJUR</p>
+        <p>Experience a world of pleasure and comfort with PJUR med PREMIUM glide, a skin elixir for delicate sensation. The silky-smooth insertion provided by this high-quality lubricant enhances intimate moments, leading to intense sensations and potentially powerful orgasms. Its luxurious glide feels delightful against the skin, creating waves of pleasure that may lead to uncontrollable moaning. Afterward, enjoy the lingering feeling of relaxation and comfort, perfectly completing your experience.</p>
 
-    <p>Experience a world of pleasure and comfort with PJUR med PREMIUM glide, a skin elixir for delicate sensation. The silky-smooth insertion provided by this high-quality lubricant enhances intimate moments, leading to intense sensations and potentially powerful orgasms. Its luxurious glide feels delightful against the skin, creating waves of pleasure that may lead to uncontrollable moaning. Afterward, enjoy the lingering feeling of relaxation and comfort, perfectly completing your experience.</p>
+        <p>PJUR med PREMIUM glide is crafted to provide unparalleled pleasure while being gentle on sensitive skin. Designed for long-lasting use, this lubricant ensures that every intimate moment is smooth and fulfilling. Don't miss out on adding this premium product to your collection for unforgettable experiences. Purchase PJUR med PREMIUM glide today!</p>
 
-    <p>PJUR med PREMIUM glide is crafted to provide unparalleled pleasure while being gentle on sensitive skin. Designed for long-lasting use, this lubricant ensures that every intimate moment is smooth and fulfilling. Don't miss out on adding this premium product to your collection for unforgettable experiences. Purchase PJUR med PREMIUM glide today!</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Silicone Based</li>
+            <li>Long Lasting</li>
+            <li>Condom Compatible</li>
+            <li>No Preservatives</li>
+        </ul>
 
-    <h2>Product Description</h2>
-    <p>Pjur med PREMIUM glide is specially formulated for dry sensitive skin. The unique formula, made of high-quality silicones without preservatives, makes this dermatologically tested formula compatible with all skin types. PJUR med PREMIUM will not block pores and leaves skin silky and smooth. Compatible with latex, polyisoprene, and polyurethane condoms.</p>
+        <p><strong>Package Weight:</strong> 4.20 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 1.50W by 6.00H by 1.50L inches</p>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Silicone Based</li>
-        <li>Long Lasting</li>
-        <li>Condom Compatible</li>
-        <li>No Preservatives</li>
-    </ul>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="pjur med PREMIUM Glide Silicone Intimate Personal Lubricant" data-product-name="med_premium_glide">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <p><strong>Package Weight:</strong> 4.20 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 1.50W by 6.00H by 1.50L inches</p>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
-
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("med_premium_glide-price").textContent = getLubricantPrice("med_premium_glide").toFixed(2);
-        </script>
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='med_premium_glide']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("med_premium_glide").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
+    </script>
 
 </body>
 </html>

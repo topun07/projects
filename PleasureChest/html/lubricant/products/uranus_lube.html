@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wet Uranus Anal Lube Premium Silicone Based Lubricant 8oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,45 +20,62 @@
         </ul>
     </nav>
 
-    <h1>Wet Uranus Anal Lube Premium Silicone Based Lubricant 8oz</h1>
+    <header>
+        <h1>Wet Uranus Anal Lube Premium Silicone Based Lubricant 8oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WT35008.jpg?v=1723899026" alt="Wet Uranus Anal Lube - Image 1">
-        <img src="https://i.pinimg.com/originals/67/69/8c/67698c13c496b43f1f398892edca3c76.jpg" alt="Wet Uranus Anal Lube - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WT35008.jpg?v=1723899026" alt="Wet Uranus Anal Lube - Image 1">
+            <img src="https://i.pinimg.com/originals/67/69/8c/67698c13c496b43f1f398892edca3c76.jpg" alt="Wet Uranus Anal Lube - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="uranus_lube-price" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="uranus_lube"></span></p>
+        <p><strong>Brand:</strong> WET</p>
 
-    <p><strong>Brand:</strong> WET</p>
+        <p>Prepare for an out-of-this-world experience with Wet Uranus Anal Lube. This silky, smooth lubricant enhances the pleasure of every intimate moment, providing intense orgasms thanks to its effortless, smooth insertion. Feel the pleasure as the lubricant glides against sensitive walls, delivering a soothing sensation that leads to uncontrollable moans and a blissful sense of comfort and relaxation.</p>
 
-    <p>Prepare for an out-of-this-world experience with Wet Uranus Anal Lube. This silky, smooth lubricant enhances the pleasure of every intimate moment, providing intense orgasms thanks to its effortless, smooth insertion. Feel the pleasure as the lubricant glides against sensitive walls, delivering a soothing sensation that leads to uncontrollable moans and a blissful sense of comfort and relaxation.</p>
+        <p>Whether you're exploring for the first time or you're a seasoned adventurer, Wet Uranus Anal Lube offers a premium, long-lasting glide to enhance your experiences. Join countless others who trust Wet Uranus for their most intimate journeys. Don’t miss out on this essential addition to your pleasure collection. Purchase yours today!</p>
 
-    <p>Whether you're exploring for the first time or you're a seasoned adventurer, Wet Uranus Anal Lube offers a premium, long-lasting glide to enhance your experiences. Join countless others who trust Wet Uranus for their most intimate journeys. Don’t miss out on this essential addition to your pleasure collection. Purchase yours today!</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Silicone</li>
+            <li>Glycerin Free</li>
+            <li>Paraben Free</li>
+            <li>Condom Compatible</li>
+        </ul>
 
-    <h2>Product Description</h2>
-    <p>Boldly go to the unexplored with Uranus Anal Lubricant. For those new to the ASSA mission, or experienced users with thousands of miles under their belt, Wet Uranus has been a trusted companion any time they've needed help before blast off. This silky smooth silicone formula can help set everyone's mind at ease, knowing the only sensations you'll feel back there are pleasurable and guaranteed to put you into orbit. Apply generously before foreplay and intercourse to see why experienced ASS-tronauts have trusted Uranus for all their explorations, and beyond!</p>
+        <p><strong>Package Weight:</strong> 4.20 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 1.50W by 6.00H by 1.50L inches</p>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Silicone</li>
-        <li>Glycerin Free</li>
-        <li>Paraben Free</li>
-        <li>Condom Compatible</li>
-    </ul>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Wet Uranus Anal Lube" data-product-name="uranus_lube">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <p><strong>Package Weight:</strong> 4.20 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 1.50W by 6.00H by 1.50L inches</p>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
-
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("uranus_lube-price").textContent = getLubricantPrice("uranus_lube").toFixed(2);
-        </script>
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='uranus_lube']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("uranus_lube").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
+    </script>
 
 </body>
 </html>

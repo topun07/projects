@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sex Grease Silicone Lubricant 8oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,44 +20,61 @@
         </ul>
     </nav>
 
-    <h1>Sex Grease Silicone Lubricant 8oz</h1>
+    <header>
+        <h1>Sex Grease Silicone Lubricant 8oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WL1801-08.jpg?v=1723886754" alt="Sex Grease Silicone Lubricant - Image 1">
-        <img src="https://i.pinimg.com/736x/46/c7/36/46c7361d526102cf5467ebe8665ce6d4.jpg" alt="Sex Grease Silicone Lubricant - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WL1801-08.jpg?v=1723886754" alt="Sex Grease Silicone Lubricant - Image 1">
+            <img src="https://i.pinimg.com/736x/46/c7/36/46c7361d526102cf5467ebe8665ce6d4.jpg" alt="Sex Grease Silicone Lubricant - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="sex_grease-price" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="sex_grease"></span></p>
+        <p><strong>Brand:</strong> ID LUBES</p>
 
-    <p><strong>Brand:</strong> ID LUBES</p>
+        <p>Discover the intense pleasure that comes with using Sex Grease Silicone Lubricant. This ultra-smooth lubricant enhances every intimate touch, delivering a sensation that intensifies orgasms and allows for smooth insertion, creating a blissful experience. Feel the slick, soothing glide as it embraces each movement, bringing forth uncontrollable moans and a profound feeling of relaxation and comfort.</p>
 
-    <p>Discover the intense pleasure that comes with using Sex Grease Silicone Lubricant. This ultra-smooth lubricant enhances every intimate touch, delivering a sensation that intensifies orgasms and allows for smooth insertion, creating a blissful experience. Feel the slick, soothing glide as it embraces each movement, bringing forth uncontrollable moans and a profound feeling of relaxation and comfort.</p>
+        <p>Crafted for those who seek a premium lubrication experience, Sex Grease provides remarkable, long-lasting performance. It's super-concentrated, so a little goes a long way. Perfect for intimate adventures, it's the choice for those looking to elevate their pleasure. Add Sex Grease to your collection and experience the ultimate in comfort and satisfaction. Purchase now!</p>
 
-    <p>Crafted for those who seek a premium lubrication experience, Sex Grease provides remarkable, long-lasting performance. It's super-concentrated, so a little goes a long way. Perfect for intimate adventures, it's the choice for those looking to elevate their pleasure. Add Sex Grease to your collection and experience the ultimate in comfort and satisfaction. Purchase now!</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Silicone-Based</li>
+            <li>Latex Safe</li>
+            <li>Waterproof</li>
+            <li>Sensitive for Skin</li>
+        </ul>
 
-    <h2>Product Description</h2>
-    <p>Silicone based Sex Grease was created for your enjoyment when a little extra lubrication is needed. Super concentrated silicone-based Sex Grease provides such remarkable lubrication that just a little goes a long way. Never Sticky.</p>
+        <p><strong>Package Weight:</strong> 9.90 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 2.00W by 7.30H by 2.00L inches</p>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Silicone-Based</li>
-        <li>Latex Safe</li>
-        <li>Waterproof</li>
-        <li>Sensitive for Skin</li>
-    </ul>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Sex Grease Silicone Lubricant" data-product-name="sex_grease">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <p><strong>Package Weight:</strong> 9.90 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 2.00W by 7.30H by 2.00L inches</p>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
-
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("sex_grease-price").textContent = getLubricantPrice("sex_grease").toFixed(2);
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='sex_grease']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("sex_grease").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
     </script>
 
 </body>

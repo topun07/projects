@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Series Jizz Unscented Water Based Lube 34oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,43 +20,61 @@
         </ul>
     </nav>
 
-    <h1>Master Series Jizz Unscented Water Based Lube 34oz</h1>
+    <header>
+        <h1>Master Series Jizz Unscented Water Based Lube 34oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/XRAH048-34_743f4c72-9039-46ed-b515-c0769c85ca12.jpg?v=1723900029" alt="Master Series Jizz Unscented Water Based Lube - Image 1">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/XRAH048-34-01_211fcc16-e4db-428f-b6c9-76dbd1e829f1.jpg?v=1723900029" alt="Master Series Jizz Unscented Water Based Lube - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/XRAH048-34_743f4c72-9039-46ed-b515-c0769c85ca12.jpg?v=1723900029" alt="Master Series Jizz Unscented Water Based Lube - Image 1">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/XRAH048-34-01_211fcc16-e4db-428f-b6c9-76dbd1e829f1.jpg?v=1723900029" alt="Master Series Jizz Unscented Water Based Lube - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="jizz-price" class="price"></span></p>
-    <p><strong>Brand:</strong> XR BRANDS</p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="jizz"></span></p>
+        <p><strong>Brand:</strong> XR BRANDS</p>
 
-    <p>Experience heightened pleasure with Master Series Jizz Unscented Water Based Lube. Its creamy, smooth texture mimics the look and feel of natural lubrication, enhancing sensations for intense orgasms and deep satisfaction. The glide allows for easy, seamless movement, creating waves of pleasure that lead to uncontrollable moans and complete relaxation.</p>
+        <p>Experience heightened pleasure with Master Series Jizz Unscented Water Based Lube. Its creamy, smooth texture mimics the look and feel of natural lubrication, enhancing sensations for intense orgasms and deep satisfaction. The glide allows for easy, seamless movement, creating waves of pleasure that lead to uncontrollable moans and complete relaxation.</p>
 
-    <p>This versatile water-based lubricant is perfect for those who love the texture and look without lingering scents. Ideal for sensual play, it stays slick but cleans up easily with soap and water. Add this unique lube to your collection for unforgettable moments. Purchase Master Series Jizz Unscented Lube today!</p>
+        <p>This versatile water-based lubricant is perfect for those who love the texture and look without lingering scents. Ideal for sensual play, it stays slick but cleans up easily with soap and water. Add this unique lube to your collection for unforgettable moments. Purchase Master Series Jizz Unscented Lube today!</p>
 
-    <h2>Product Description</h2>
-    <p>Love the texture and look of cum. Play with our Jizz Body Glide and enjoy using it in sensual play. The creamy white texture is made from a water-based mix and it is unscented so you can enjoy the look and feel without any lingering scents. It is super slippery, so you can slip and slide over each other as you massage each other's bodies. As a bonus, even if it spills it is non-staining. It stays slick, but because of the water-base it cleans up easily with soap and water. Ingredients included are generally body safe but do include glycerin, so it is not recommended for internal use. Keep away from children and keep at room temperature in an upright position.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Water-Based</li>
+            <li>Unscented</li>
+            <li>Non-Staining</li>
+        </ul>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Water-Based</li>
-        <li>Unscented</li>
-        <li>Non-Staining</li>
-    </ul>
+        <p><strong>Package Weight:</strong> 38.50 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 3.50W by 9.00H by 3.50L inches</p>
 
-    <p><strong>Package Weight:</strong> 38.50 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 3.50W by 9.00H by 3.50L inches</p>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Master Series Jizz Unscented Water Based Lube" data-product-name="jizz">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("jizz-price").textContent = getLubricantPrice("jizz").toFixed(2);
-        </script>
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='jizz']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("jizz").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
+    </script>
 
 </body>
 </html>

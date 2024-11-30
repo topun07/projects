@@ -7,3 +7,7 @@ i was able to create a lubricant.js page that would update all prices it associa
 would like to add a game page to the site
 would like to add quote for every day of the year on sex health and 
 would like to find good podcast talks to add to list
+
+i have two of the same dildo and need to replace one naked_addiction and naked_dual_sense
+check for a second image vibrating_reptile.html Playeontology Reptile Vibrating Series-Dickydactyl
+gspot_pro_harness.html perfect fpr strap on

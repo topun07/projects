@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xtreme Glide 4.8oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -26,11 +27,11 @@
     <main>
         <!-- Product Images Section -->
         <div class="product-images">
-            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BA1430-01.jpg?v=1723856681" alt="Xtreme Glide 4.8oz - Image 1" style="width: 200px;">
-            <img src="https://i.pinimg.com/474x/59/e9/95/59e9958d4b72eaddd37b96cf22bd2b81--sexy-sweet-muscle-hunks.jpg" alt="Decorative Image" style="width: 200px;">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BA1430-01.jpg?v=1723856681" alt="Xtreme Glide 4.8oz - Image 1">
+            <img src="https://i.pinimg.com/474x/59/e9/95/59e9958d4b72eaddd37b96cf22bd2b81--sexy-sweet-muscle-hunks.jpg" alt="Decorative Image">
         </div>
 
-        <p><strong>MSRP:</strong> $<span id="xtreme_glide-price" class="price"></span></p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="xtreme_glide"></span></p>
 
         <p><strong>Brand:</strong> BODY ACTION</p>
 
@@ -45,23 +46,39 @@
             <li>Compatible with latex condoms and sex toys</li>
             <li>Waterproof and works as a massage oil</li>
             <li>Easy cleanup with a wet cloth</li>
-            <li>Dimensions: 4.8 oz</li>
         </ul>
 
         <p><strong>Package Weight:</strong> 4.90 Ounces</p>
         <p><strong>Package Dimensions:</strong> 1.50W by 5.30H by 1.50L inches</p>
 
-        <!-- Add to Cart Button -->
-        <button id="add-to-cart" onclick="location.href='cart.html'">Add to Cart</button>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Xtreme Glide" data-product-name="xtreme_glide">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-        <!-- Linking JavaScript for Cart functionality -->
-        <script src="cart.js"></script>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-        <script>
-            // Set MSRP prices dynamically from lubricant.js
-            document.getElementById("xtreme_glide-price").textContent = getLubricantPrice("xtreme_glide").toFixed(2);
-        </script>
-
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
     </main>
+
+    <script>
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='xtreme_glide']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("xtreme_glide").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
+    </script>
+
 </body>
 </html>

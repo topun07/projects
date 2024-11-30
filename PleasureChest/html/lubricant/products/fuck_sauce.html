@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuck Sauce Anal Numbing Lubricant 8oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,42 +20,60 @@
         </ul>
     </nav>
 
-    <h1>Fuck Sauce Anal Numbing Lubricant 8oz</h1>
+    <header>
+        <h1>Fuck Sauce Anal Numbing Lubricant 8oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/SE2411-10-1.jpg?v=1723880018" alt="Fuck Sauce Anal Numbing Lubricant - Image 1">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/SE2411-10-1-01.jpg?v=1723880018" alt="Fuck Sauce Anal Numbing Lubricant - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/SE2411-10-1.jpg?v=1723880018" alt="Fuck Sauce Anal Numbing Lubricant - Image 1">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/SE2411-10-1-01.jpg?v=1723880018" alt="Fuck Sauce Anal Numbing Lubricant - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="fuck_sauce-price" class="price"></span></p>
-    <p><strong>Brand:</strong> CAL EXOTICS</p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="fuck_sauce"></span></p>
+        <p><strong>Brand:</strong> CAL EXOTICS</p>
 
-    <p>Enhance your pleasure with Fuck Sauce Anal Numbing Lubricant. This premium water-based lube provides a smooth, easy glide for intense orgasms and total satisfaction. Feel the pleasure as it glides against sensitive areas, creating soothing sensations that lead to uncontrollable quivering and a deep sense of comfort.</p>
+        <p>Enhance your pleasure with Fuck Sauce Anal Numbing Lubricant. This premium water-based lube provides a smooth, easy glide for intense orgasms and total satisfaction. Feel the pleasure as it glides against sensitive areas, creating soothing sensations that lead to uncontrollable quivering and a deep sense of comfort.</p>
 
-    <p>Formulated with desensitizing lidocaine, this lubricant helps keep playtime going for as long as you desire. Perfectly balanced for your body, it’s hypoallergenic, pH-friendly, and safe for all skin types. Don’t miss out on this unique sensation—add Fuck Sauce to your collection today!</p>
+        <p>Formulated with desensitizing lidocaine, this lubricant helps keep playtime going for as long as you desire. Perfectly balanced for your body, it’s hypoallergenic, pH-friendly, and safe for all skin types. Don’t miss out on this unique sensation—add Fuck Sauce to your collection today!</p>
 
-    <h2>Product Description</h2>
-    <p>Everything's better with sauce on it, especially the Fuck Sauce Anal Numbing Lubricant. The premium water-based lubricant is infused with a desensitizing lidocaine for thrilling anal exploration. The lidocaine infused lubricant is made to desensitize and slightly numb to keep playtime going. The water-based formula enhances natural lubrication, retains moisture, and lasts as long as play time. Expertly created by the sexual health experts at CalExotics, the water-based formula is hypoallergenic, pH-friendly, safe for all skin types, and free from artificial fragrances and colorants. Made in the USA.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Water-based</li>
+            <li>Desensitizing</li>
+            <li>PH Friendly</li>
+        </ul>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Water-based</li>
-        <li>Desensitizing</li>
-        <li>PH Friendly</li>
-    </ul>
+        <p><strong>Package Weight:</strong> 10.00 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 2.00W by 6.50H by 2.00L inches</p>
 
-    <p><strong>Package Weight:</strong> 10.00 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 2.00W by 6.50H by 2.00L inches</p>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Fuck Sauce Anal Numbing Lubricant" data-product-name="fuck_sauce">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("fuck_sauce-price").textContent = getLubricantPrice("fuck_sauce").toFixed(2);
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='fuck_sauce']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("fuck_sauce").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
     </script>
 
 </body>

@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Pinnacle of Pleasure: A Lubricant Collection Like No Other</title>
     <link rel="stylesheet" href="lubricant.css">
-    <script src="lubricant.js"></script>
+    <script src="lubricant.js" defer></script>
+    <script>
+        // Ensure prices are updated after the script is loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            updateLubricantPrices();
+        });
+    </script>
 </head>
 <body>
 
@@ -13,137 +19,133 @@
         <h1>Unmatched Bliss: A Collection of Premium Lubricants for Ultimate Pleasure</h1>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dildo.html">Dildo</a></li>
-            <li><a href="vibrator.html">Vibrator</a></li>
-            <li><a href="lubricant.html">Lubricant</a></li>
-        </ul>
-    </nav>
+        <!-- Navigation Columns -->
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../dildo/dildo.html">Dildo</a></li>
+                <li><a href="../vibrator/vibrator.html">Vibrator</a></li>
+                <li><a href="../lubricant/lubricant.html">Lubricant</a></li>
+                <li><a href="../strap/strap.html">Straps</a></li>
+                <li><a href="../cart/cart.html">Cart</a></li>
+            </ul>
+        </nav>
 
     <!-- Product Grid -->
     <div class="product-grid">
         <div class="product-item">
             <a href="../lubricant/products/backdoor.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PG1700-08.jpg?v=1723865145" alt="BackDoor">
-                <p>BackDoor</p> <p>$<span id="backdoor-price"></span></p>
+                <p>BackDoor</p>
+                <p></strong> $<span class="product-price" data-product-name="backdoor"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/endless_love.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BA3000-03.jpg?v=1723860249" alt="Endless Love">
-                <p>Endless Love</p> <p>$<span id="endless_love-price"></span></p>
+                <p>Endless Love</p>
+                <p></strong> $<span class="product-price" data-product-name="endless_love"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/fuck_sauce.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/SE2411-10-1.jpg?v=1723880018" alt="Fuck Sauce Anal Numbing">
-                <p>Fuck Sauce Anal Numbing </p> <p>$<span id="fuck_sauce-price"></span></p>
+                <p>Fuck Sauce Anal Numbing </p>
+                <p></strong> $<span class="product-price" data-product-name="fuck_sauce"></span></p>
             </a>
         </div>
         <div class="product-item">
-            <a href="../lubricant/products/fuck_sauce_momma.html">
+            <a href="../lubricant/products/fuck_sauce_slick.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/SE2404-30-1.jpg?v=1723890419" alt="Fuck Sauce Slick">
-                <p>Fuck Sauce Slick </p> <p>$<span id="fuck_sauce_momma-price"></span></p>
+                <p>Fuck Sauce Slick </p>
+                <p></strong> $<span class="product-price" data-product-name="fuck_sauce_slick"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/good_clean_love.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/GCL200402.jpg?v=1723881450" alt="Fertility Potion">
-                <p>Fertility Potion </p> <p>$<span id="good_clean_love-price"></span></p>
+                <p>Fertility Potion </p>
+                <p></strong> $<span class="product-price" data-product-name="good_clean_love"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/intimate_earth.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PP052-1.jpg?v=1723863226" alt="Easing Anal Gel">
-                <p>Easing Anal Gel</p> <p> $<span id="intimate_earth-price"></span></p>
+                <p>Easing Anal Gel</p>
+                <p></strong> $<span class="product-price" data-product-name="intimate_earth"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/jizz.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/XRAH048-34_743f4c72-9039-46ed-b515-c0769c85ca12.jpg?v=1723900029" alt="JIZZ">
-                <p>JIZZ </p> <p>$<span id="jizz-price"></span></p>
+                <p>JIZZ </p>
+                <p></strong> $<span class="product-price" data-product-name="jizz"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/med_premium_glide.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PG2510-00.jpg?v=1723870784" alt="Silken Elixir for Delicate Skin">
-                <p>Silken Elixir for Delicate Skin </p> <p>$<span id="med_premium_glide-price"></span></p>
+                <p>Silken Elixir for Delicate Skin </p>
+                <p></strong> $<span class="product-price" data-product-name="med_premium_glide"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/playboy.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PB-LQ-2093-2.jpg?v=1723886631" alt="Playboy">
-                <p>Playboy</p> <p>$<span id="playboy-price"></span></p>
+                <p>Playboy</p>
+                <p></strong> $<span class="product-price" data-product-name="playboy"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/pussy_willow.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/PP054-8.jpg?v=1723879683" alt="Seduce with the Allure of Pussy Willow Essence">
-                <p>Seduce with the Allure of Pussy Willow Essence</p> <p>$<span id="pussy_willow-price"></span></p>
+                <p>Seduce with the Allure of Pussy Willow Essence</p>
+                <p></strong> $<span class="product-price" data-product-name="pussy_willow"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/sex_grease.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WL1801-08.jpg?v=1723886754" alt="SEX Grease">
-                <p>SEX Grease </p> <p>$<span id="sex_grease-price"></span></p>
+                <p>SEX Grease </p>
+                <p></strong> $<span class="product-price" data-product-name="sex_grease"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/swiss_navy.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/MD5000-32.jpg?v=1723860650" alt="Velvety Smooth Swiss Navy $232.38">
-                <p>Velvety Smooth Swiss Navy</p> <p>$<span id="swiss_navy-price"></span></p> 
+                <p>Velvety Smooth Swiss Navy</p>
+                <p></strong> $<span class="product-price" data-product-name="swiss_navy"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/uranus_lube.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WT35008.jpg?v=1723899026" alt="Uranus Anal Lube">
-                <p>Uranus Anal Lube</p> <p>$<span id="uranus_lube-price"></span></p>
+                <p>Uranus Anal Lube</p>
+                <p></strong> $<span class="product-price" data-product-name="uranus_lube"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/wet_platinum.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WT27006.jpg?v=1723891744" alt="Embrace Pure Sensation with Platinum Luxury">
-                <p>Embrace Pure Sensation with Platinum Luxury</p> <p>$<span id="wet_platinum-price"></span></p>
+                <p>Embrace Pure Sensation with Platinum Luxury</p>
+                <p></strong> $<span class="product-price" data-product-name="wet_platinum"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/wicked.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/WS91310.jpg?v=1723893302" alt="Wicked">
-                <p>Wicked</p> <p>$<span id="wicked-price"></span></p>
+                <p>Wicked</p>
+                <p></strong> $<span class="product-price" data-product-name="wicked"></span></p>
             </a>
         </div>
         <div class="product-item">
             <a href="../lubricant/products/xtreme_glide.html">
                 <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/BA1430-01.jpg?v=1723856681" alt="Xtreme Sensual Glide">
-                <p>Xtreme Sensual Glide</p> <p>$<span id="xtreme_glide-price"></span></p>
+                <p>Xtreme Sensual Glide</p>
+                <p></strong> $<span class="product-price" data-product-name="xtreme_glide"></span></p>
             </a>
         </div>
     </div>
-
-    <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("backdoor-price").textContent = getLubricantPrice("backdoor").toFixed(2);
-        document.getElementById("endless_love-price").textContent = getLubricantPrice("endless_love").toFixed(2);
-        document.getElementById("fuck_sauce-price").textContent = getLubricantPrice("fuck_sauce").toFixed(2);
-        document.getElementById("fuck_sauce_momma-price").textContent = getLubricantPrice("fuck_sauce_momma").toFixed(2);
-        document.getElementById("good_clean_love-price").textContent = getLubricantPrice("good_clean_love").toFixed(2);
-        document.getElementById("intimate_earth-price").textContent = getLubricantPrice("intimate_earth").toFixed(2);
-        document.getElementById("jizz-price").textContent = getLubricantPrice("jizz").toFixed(2);
-        document.getElementById("med_premium_glide-price").textContent = getLubricantPrice("med_premium_glide").toFixed(2);
-        document.getElementById("playboy-price").textContent = getLubricantPrice("playboy").toFixed(2);
-        document.getElementById("pussy_willow-price").textContent = getLubricantPrice("pussy_willow").toFixed(2);
-        document.getElementById("sex_grease-price").textContent = getLubricantPrice("sex_grease").toFixed(2);
-        document.getElementById("swiss_navy-price").textContent = getLubricantPrice("swiss_navy").toFixed(2);
-        document.getElementById("uranus_lube-price").textContent = getLubricantPrice("uranus_lube").toFixed(2);
-        document.getElementById("wet_platinum-price").textContent = getLubricantPrice("wet_platinum").toFixed(2);
-        document.getElementById("wicked-price").textContent = getLubricantPrice("wicked").toFixed(2);
-        document.getElementById("xtreme_glide-price").textContent = getLubricantPrice("xtreme_glide").toFixed(2);
-        // Repeat for each product in the grid
-    </script>
-
 
 </body>
 </html>

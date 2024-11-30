@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Clean Love BioGenesis Fertility Lubricant 2oz</title>
-    <link rel="stylesheet" href="../lubricant.css">
-    <script src="../lubricant.js"></script>
+    <link rel="stylesheet" href="../../dildo/dildo.css">
+    <script src="../../../index.js" defer></script>
+    <script src="../lubricant.js" defer></script>
 </head>
 <body>
 
@@ -19,45 +20,63 @@
         </ul>
     </nav>
 
-    <h1>Good Clean Love BioGenesis Fertility Lubricant 2oz</h1>
+    <header>
+        <h1>Good Clean Love BioGenesis Fertility Lubricant 2oz</h1>
+    </header>
 
-    <div class="product-images">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/GCL200402.jpg?v=1723881450" alt="Good Clean Love BioGenesis Fertility Lubricant - Image 1">
-        <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/GCL200402-01.jpg?v=1723881450" alt="Good Clean Love BioGenesis Fertility Lubricant - Image 2">
-    </div>
+    <main>
+        <div class="product-images">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/GCL200402.jpg?v=1723881450" alt="Good Clean Love BioGenesis Fertility Lubricant - Image 1">
+            <img src="https://cdn.shopify.com/s/files/1/0070/9994/0923/files/GCL200402-01.jpg?v=1723881450" alt="Good Clean Love BioGenesis Fertility Lubricant - Image 2">
+        </div>
 
-    <p><strong>MSRP:</strong> $<span id="good_clean_love-price" class="price"></span></p>
-    <p><strong>Brand:</strong> GOOD CLEAN LOVE</p>
+        <p><strong>MSRP:</strong> $<span class="product-price" data-product-name="good_clean_love"></span></p>
+        <p><strong>Brand:</strong> GOOD CLEAN LOVE</p>
 
-    <p>This fertility-friendly lubricant brings not only the promise of support on your conception journey but an incredible pleasure experience. The smooth insertion enhances intense sensations, allowing the lubricant to glide effortlessly against sensitive areas, heightening the feeling of intimacy. As it soothes each touch, it builds to a level of pleasure that may lead to uncontrollable moaning and an overall sensation of comfort and relaxation.</p>
+        <p>This fertility-friendly lubricant brings not only the promise of support on your conception journey but an incredible pleasure experience. The smooth insertion enhances intense sensations, allowing the lubricant to glide effortlessly against sensitive areas, heightening the feeling of intimacy. As it soothes each touch, it builds to a level of pleasure that may lead to uncontrollable moaning and an overall sensation of comfort and relaxation.</p>
 
-    <p>BioGenesis Fertility Lubricant doesn't just provide a pleasurable experience but also nurtures the moment with its unique formula. Its soothing glide and sperm-friendly design make it a trusted choice for many couples. Don’t miss out on this innovative, long-lasting lubricant. Add BioGenesis to your collection and feel the difference.</p>
+        <p>BioGenesis Fertility Lubricant doesn't just provide a pleasurable experience but also nurtures the moment with its unique formula. Its soothing glide and sperm-friendly design make it a trusted choice for many couples. Don’t miss out on this innovative, long-lasting lubricant. Add BioGenesis to your collection and feel the difference.</p>
 
-    <h2>Product Description</h2>
-    <p>Nearly one third of couples trying to conceive prefer the ease and comfort of a lubricant during intimacy. BioGenesis Fertility Lubricant helps them do so with confidence. Developed with the help of leading scientists, BioGenesis is highly effective as a lubricant and revolutionary in the ways it supports sperm health without impeding sperm movement. Sensual, long-lasting, and hypoallergenic, BioGenesis is the first fertility-friendly intimacy gel that's both paraben-free and includes magnesium and calcium ions to support your fertility journey.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Supports Sperm</li>
+            <li>Magnesium &amp; Calcium Ions Added</li>
+            <li>No Parabens</li>
+            <li>No Petrochemicals</li>
+            <li>Long-Lasting</li>
+            <li>Made in USA</li>
+        </ul>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Supports Sperm</li>
-        <li>Magnesium &amp; Calcium Ions Added</li>
-        <li>No Parabens</li>
-        <li>No Petrochemicals</li>
-        <li>Long-Lasting</li>
-        <li>Made in USA</li>
-    </ul>
+        <p><strong>Package Weight:</strong> 3.90 Ounces</p>
+        <p><strong>Package Dimensions:</strong> 1.50W by 7.00H by 3.00L inches</p>
 
-    <p><strong>Package Weight:</strong> 3.90 Ounces</p>
-    <p><strong>Package Dimensions:</strong> 1.50W by 7.00H by 3.00L inches</p>
+        <!-- Sticky Add to Cart Button -->
+        <button class="add-to-cart sticky-add-to-cart" data-name="Good Clean Love BioGenesis Fertility Lubricant" data-product-name="good_clean_love">
+            <span class="cart-icon">&#128722;</span> Add to Cart
+        </button>
 
-    <!-- Add to Cart Button -->
-    <button id="add-to-cart">Add to Cart</button>
+        <!-- Back Button -->
+        <div id="back-button" class="back-button">
+            <button class="back-icon">&#8592; Back</button>
+        </div>
 
-    <!-- Linking JavaScript for Cart functionality -->
-    <script src="cart.js"></script>
+        <div class="cart-bubble" id="cart-bubble">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </main>
 
     <script>
-        // Set MSRP prices dynamically from lubricant.js
-        document.getElementById("good_clean_love-price").textContent = getLubricantPrice("good_clean_love").toFixed(2);
+        // Initialize MSRP prices dynamically
+        const priceElement = document.querySelector(".product-price[data-product-name='good_clean_love']");
+        if (priceElement) {
+            priceElement.textContent = getLubricantPrice("good_clean_love").toFixed(2);
+        }
+
+        // Back button functionality
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.history.back();
+        });
     </script>
 
 </body>
